@@ -1,0 +1,104 @@
+* {
+    font-family: 'Noto Sans Mono', Noto;
+}
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.pizza-image {
+    width: 90%;
+    border: 7px solid black;
+    
+}
+.pizzaImageError {
+    width: 100%;
+    
+}
+#input-name {
+    width: 70%;
+    max-width: 350px;
+    height: 35px;
+    padding-left: 15px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-weight: 300;
+   
+}
+#search-button {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    transition: all 0.1s;
+    background: rgb(235, 235, 0);
+}
+#search-button:hover {
+    color: black;
+    background: rgb(255, 255, 0);
+    transform: scale(0.9);
+    transition: 0.1s ease-in-out;
+}
+.pizzas-container small {
+    color: #dc3545;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+.card-container {
+    background-color: rgb(111, 100, 0);
+    width: 90%;
+    max-width: 600px;
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+li {
+    text-decoration: none;
+    list-style:none;
+}
+.pizza-info {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.pizza-ingredientes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    width: 90%;
+}
+
+.alert {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 3px;
+    border: 3px solid;
+}
+@media (max-width: 425px) {
+    .pizza-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
